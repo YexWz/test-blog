@@ -1,0 +1,14 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "i": "yarn && cd file && yarn && cd ../blog-starter-app && yarn ",
+    "dev":"concurrently  \"cd file && yarn start\" \" cd blog-starter-app && yarn dev\" ",
+    "start":"concurrently  \"cd file && yarn start\" \" cd blog-starter-app && yarn build && yarn start\" "
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

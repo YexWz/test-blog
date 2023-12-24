@@ -1,0 +1,1 @@
+const concurrently = require("concurrently");     const success = function () { console.log("success") };     const failure = function () { console.log("failure") };    const { result } = concurrently(        [            "cd file && yarn start",            "cd blog-starter-app && yarn dev"      ]   );     result.then(success, failure);
