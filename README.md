@@ -8,3 +8,5 @@ yarn dev
 # 打包测试
 yarn start
 其中isr是需要在正式环境，运行yarn start才可以测试效果
+
+<img src="test.gif"  width="100%"/>
